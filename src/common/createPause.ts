@@ -7,6 +7,8 @@ export const createPause = obsDispCreator(() => {
   const togglePause =
     (ev: KeyboardEvent, onlyIfPaused = true) =>
     () => {
+      if ((ev.target as any)?.tagName?.toLowerCase() === 'input') return
+
       ev?.preventDefault()
 
       if (onlyIfPaused && !state.isPaused) return
