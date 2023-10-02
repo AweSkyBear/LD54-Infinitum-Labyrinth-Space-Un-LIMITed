@@ -6,6 +6,10 @@ AweSkyBear's entry for LDJAM 54
 
 **Game**: **Infinitum Labyrinth - Space Un-LIMITed**
 
+## [Play Online Here](https://ld54-aweskybear-infinitum-labyrinth.netlify.app)
+
+## [LD Game Page](https://ldjam.com/events/ludum-dare/54/$371504)
+
 ![Alt text](screenshots/NEW1.jpg)
 
 ---
