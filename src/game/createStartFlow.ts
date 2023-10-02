@@ -13,9 +13,10 @@ import { addHtmlEl, IHTMLElWrapper } from '../htmlEl/addHtmlEl'
 import { createFreeRoam } from './createFreeRoam'
 import { createGame } from './createGame'
 import { TStartMenuButton } from './html/createHeader'
-import { creditsHTML, freeRoamInstructionsHtml, gameInstructionsHtml } from './instructions'
+import { creditsHTML, freeRoamInstructionsHtml, getGameInstructionsHtml } from './instructions'
 import { TAllSignsMap } from '../freeRoam/createUserSignCreator'
 import { setMazeSize } from './global/mazeSize'
+import { setCalmMode } from './global/calmMode'
 
 const _cleanBeforeStart = () => {
   removeObsById('header')
@@ -44,7 +45,7 @@ export const createStartFlow = obsDispCreator(
       document.querySelector('.credits-wrap')?.remove()
 
       state.instructionsEl = addHtmlEl({ attachTo: document.querySelector('.header') })
-        .setHTML(gameInstructionsHtml)
+        .setHTML(getGameInstructionsHtml())
         .then((res) => {
           res.el.querySelector('.start-the-game')?.addEventListener('click', () => {
             dispatchEvent('BUTTON_CLICK', {
@@ -78,6 +79,10 @@ export const createStartFlow = obsDispCreator(
             ).innerHTML = `${newSize} cells - ${sizeVerdict}`
 
             setMazeSize(parseInt(newSize), parseInt(newSize))
+          })
+
+          res.el.querySelector<HTMLInputElement>('.calm-mode')?.addEventListener('input', (ev) => {
+            setCalmMode((ev.target as any).checked)
           })
         })
     }

@@ -1,30 +1,42 @@
 import { getMazeSize } from '../game/global/mazeSize'
+import { getIsCalmMode } from './global/calmMode'
 
-export const gameInstructionsHtml = `
+export const getGameInstructionsHtml = () => `
     <div class="info">
         <h2>Before you start, fellow trapped explorer...</h2>
-        
+
         <div class="limitedness mt-2 mb-2">
             <h3>CHOOSE SPACE LIMITEDness: <span class="maze-size-choice">${
               getMazeSize().rows
             }</span></h3>
             <input class="maze-size" type="range" min="6" max="35" value="10" step="1" />
+
             <div class="maze-size-tip">Recommended: play the game on size 10 if it's your first run</div>
         </div>
 
         <h3>
             <p>
-                Find your way out of the maze... 
+                Find your way out of the maze...
                 <br><br>&nbsp;&nbsp;the space is <em>limited</em>...
                 <br>
                 <br>&nbsp;&nbsp;the rooms count is <b>NOT</b>...
                 <br>
                 <br>&nbsp;&nbsp;the maze is <em>infinite</em>
                 <br>
-                <br>&nbsp;&nbsp;there will be <em>foes</em>... 🐹 🐷 🙉</h3>
+                <br>&nbsp;&nbsp;there will be <em>foes</em>... 🐹 🐷 🙉
+                <br>... or NOT (click to turn them OFF):
+                <input class="calm-mode" type="checkbox" ${getIsCalmMode() ? 'checked' : ''}>
+                <label>CALM MODE / DZEN / POARO-only</label>
+
+                <br>
+                <br>&nbsp;&nbsp;... repell them with a shockwave [SPACE] or [e]
+                <br>&nbsp;&nbsp;... OR turn them OFF completely for an investigator-ONLY
+                    dzen-like experience repell them with a shockwave [SPACE] or [e]
+
+
             </p>
         </h3>
-        
+
         <br>
         <p><b>Movement: </b> WASD or Arrows</p>
         <p><b>Action: </b> [SPACE] or [E]</p>
@@ -68,7 +80,7 @@ export const gameInstructionsHtml = `
 export const freeRoamInstructionsHtml = `
     <div class="info">
         <h2>Before you start, fellow explorer...</h2>
-        <h3><br>Roam freely... no purpose... 
+        <h3><br>Roam freely... no purpose...
             <br>&nbsp;&nbsp;you can configure the maze and even share it as a URL!</h3>
          </h3>
 
@@ -108,18 +120,18 @@ export const freeRoamInstructionsHtml = `
         <p><b>Change</b> the maze title, so that you get a unique maze</p>
         <hr>
         <p><b>Change</b> the maze size, so that you change the <b>LIMITEDness</b> to explore a bigger or smaller maze</p>
-        
+
         <hr>
         <p><b>Add and Edit</b> notes via a the action button to introduce mysterious and <b>a-maze-ing</b> messages</p>
-        
+
         <hr>
         <p><b>Customize the Looks</b> of your maze via the [⚙️] button</p>
-        
+
         <hr>
         <p><b>Share :)</b> your final maze via using the [🎁] button</p>
 
         <br>
-        <p>Enjoy the free-roaming! <button class="start-free-roam mt-3 mb-2">Enter the infinite maze..</button></p> 
+        <p>Enjoy the free-roaming! <button class="start-free-roam mt-3 mb-2">Enter the infinite maze..</button></p>
     </div>`
 
 export const creditsHTML = `
@@ -128,7 +140,7 @@ export const creditsHTML = `
         <h2>By AweSkyBear</h2>
         <p><a target="_blank" href="https://ldjam.com/events/ludum-dare/54/$371504">Game page on LDJAM</a></p>
         <p>Tools/Stuff used: HTML5, TypeScript, obs-disp, Prando, maze-generation, HowlerJS, SFXR, Sound Fonts, misc MIDI editors, LOVE</p>
-        <p>Full credits and source code available on the <a target="_blank" 
+        <p>Full credits and source code available on the <a target="_blank"
             href="https://github.com/AweSkyBear/LD54-Infinitum-Labyrinth-Space-Un-LIMITed/blob/main/README.md#credits">github repo README</a></p>
         <p><a target="_blank" href="https://therealjavascript.com">www.therealjavascript.com</a></p>
         <br>

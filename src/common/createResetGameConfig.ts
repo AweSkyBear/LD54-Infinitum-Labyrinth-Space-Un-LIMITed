@@ -1,3 +1,4 @@
+import { setCalmMode } from '../game/global/calmMode'
 import { resetWallColorsToDefaults } from '../game/global/cellWallColors'
 import { setCurrentSeed } from '../game/global/currentSeed'
 import { setCurrentTopos } from '../game/global/currentTopos'
@@ -14,6 +15,7 @@ export const createResetGameConfig = obsDispCreator(
       setCurrentSeed('0')
       setSeedSuffix('')
       resetWallColorsToDefaults()
+      // setCalmMode(false) // do NOT reset this flag
 
       setCurrentTopos('start-screen')
     },
