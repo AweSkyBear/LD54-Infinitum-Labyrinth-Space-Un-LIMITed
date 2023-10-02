@@ -1,0 +1,4 @@
+The original package is available at: https://www.npmjs.com/package/maze-generation
+License: https://github.com/JRIngram/maze-gen/blob/develop/LICENCE.md
+
+This (local) version has a simple fix (for consumption as a module), otherwise remains untouched.

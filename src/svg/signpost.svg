@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px"
+  viewBox="0 0 16 16" fill="#000000" class="bi bi-signpost" preserveAspectRatio="xMinYMin meet">
+  <defs id="svgEditorDefs">
+    <pattern height="10" id="hatch-red-45" patternTransform="rotate(45) scale(0.4)" patternUnits="userSpaceOnUse"
+      viewBox="0 0 10 10" width="10" x="0" y="0">
+      <line style="stroke:red;stroke-width:1px;" x1="0" x2="10" y1="5" y2="5" />
+    </pattern>
+    <pattern height="20%" id="star-navy-obox" patternUnits="objectBoundingBox" viewBox="-20 -20 168 168" width="20%"
+      x="0%" y="0%">
+      <path d="M63.999 0l-20.001 40.020-44 8 32 28-8 44 40.001-20 39.999 20-7.999-44 32.001-28-44.002-7.946z"
+        style="fill:navy;stroke:none;" />
+    </pattern>
+    <pattern height="100%" id="ellipse-center" patternContentUnits="objectBoundingBox" patternUnits="objectBoundingBox"
+      preserveAspectRatio="xMinYMin meet" width="100%" x="0%" y="0%">
+      <circle cx="0.5" cy="0.5" r="0.5" style="fill:navy;fill-opacity:0.1;stroke:none;" />
+      <circle cx="0.5" cy="0.5" r="0.4" style="fill:navy;fill-opacity:0.2;stroke:none;" />
+      <circle cx="0.5" cy="0.5" r="0.3" style="fill:navy;fill-opacity:0.4;stroke:none;" />
+      <circle cx="0.5" cy="0.5" r="0.2" style="fill:navy;fill-opacity:0.6;stroke:none;" />
+      <circle cx="0.5" cy="0.5" r="0.1" style="fill:navy;fill-opacity:1;stroke:none;" />
+    </pattern>
+  </defs>
+  <rect id="svgEditorBackground" x="0" y="0" width="16" height="16" style="fill: none; stroke: none;" />
+  <rect x="1.779900" y="2.988000" style="fill: white;" id="e2_rectangle" width="11.132500" height="6.506000" />
+  <path
+    d="M7.8,3.754v-0.094h-2.88a1,1,0,0,0,-3.92,-0.82v6.42a1,1,0,0,0,0.94,0.66h5.06v6.08h2v-6h3.532a1,1,0,0,0,0.608,-0.24l0.273,-1.14a5.1421,5.1421,0,0,0,0.62,-1.9l-0.373,-2.18a1.4561,1.4561,0,0,0,-2.068,-2.04h-2.592v0.934a1,1,0,0,0,-2.64,-0.28ZM12.012,5.08l0.626,2.96l-0.986,1.4h-9.692v-6.16h10.652Z"
+    style="stroke-width:1;" id="e1_path" />
+  <text dy="-0.5em" style="fill: black; font-family: Arial; font-size: 4px;" id="e7_text">
+    <tspan x="" />
+    <tspan x="" dy="1.25em" />
+  </text><text class="sign-text" style="fill:black;font-family:Arial;font-size:5px; font-weight:bold;" x="2.3"
+    y="7.8">__TEXT__</text><text dy="-0.5em" style="fill:black;font-family:Arial;font-size:20px" id="e10_text" />
+  <path class="beam" d="M-14.857143,-9.142858l-7.285685,19.428544h11.999956l0.6429,-19.642887Z"
+    style="fill:black;stroke:black;vector-effect:non-scaling-stroke;stroke-width:1px" id="e4_shape"
+    transform="matrix(0.337349 0 0 0.337349 11.6867 12.5301)" />
+</svg>
